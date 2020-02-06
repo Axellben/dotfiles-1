@@ -1,0 +1,1 @@
+/home/orangefran/.zshrc
