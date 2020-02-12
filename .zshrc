@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias go-cd="cd /home/orangefran/go/src/github.com/OrangeFran"
+alias msfconsole="msfconsole -x \"db_connect orangefran@msf\""
 
 # for rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
