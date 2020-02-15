@@ -41,13 +41,13 @@ run variety &
 run nm-applet &
 
 # bluetooth
-run blueman-tray &
+# run blueman-tray &
 
 # battery
-run cbatticon &
+# run cbatticon &
 
 # pulseaudio
-run pasystray &
+# run pasystray &
 
 # pamac
 #run pamac-tray &

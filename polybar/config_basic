@@ -41,7 +41,29 @@ adapta-yellow = #C9BC0E
 adapta-lightgreen = #4DB6AC
 adapta-green = #009688
 
-[bar/example]
+transparent = #00000000    
+black = #263238    
+white = #D8DEE9    
+red = #BF616A    
+red1 = #BF3B48    
+green = #94AD7D    
+green1 = #70AD37    
+blue = #5E81AC    
+blue1 = #3C6EAC    
+cyan = #7AACBA    
+cyan1 = #56A4BA    
+violet = #B48EAD    
+violet1 = #B46AA6    
+orange = #D08770    
+orange1 = #D06847    
+yellow = #CFB074    
+yellow1 = #CF9B36    
+focus = #8C8C8C    
+focus1 = #757575    
+unfocus = #1A2328    
+unfocus1 = #101010 
+
+[bar/nord]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 95.4%
 height = 35
@@ -50,8 +72,8 @@ offset-y = 3.0%
 ;radius = 10.0
 fixed-center = true
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${colors.transparent}
+foreground = ${colors.white}
 
 line-size = 3
 line-color = #f00
@@ -65,24 +87,15 @@ padding-right =
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = siji:pixelsize=10;2
-font-1 = unifont:fontformat=truetype:size=12:antialias=false;2
-font-2 = xos4 Terminus:size=12;2
-font-3 = FontAwesome 5 Free:size=10:style=Solid;2
-font-4 = Material Icons:style=Regular;2
-font-5 = Weather Icons:size=12;4
-font-6 = Font Awesome 5 Brands:pixelsize=12;2
-font-7 = Font Awesome 5 Free:pixelsize=12;2
-font-8 = mplus Nerd Font:size=12;2
-font-9 = Tinos Nerd Font:size=12;2
+font-0 = NotoSansMono Nerd Font:size=10;2
 
 modules-left = bspwm
 modules-center = 
 modules-right = date
 
-;tray-position = right
-;tray-padding = 2
-;tray-background = #0063ff
+tray-position = center
+tray-padding = 2
+tray-background = ${colors.transparent}
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -131,7 +144,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 
-ws-icon-0 = code;
+ws-icon-0 = code;
 ws-icon-1 = web;
 ws-icon-2 = chat;
 ws-icon-3 = media;
@@ -140,18 +153,18 @@ ws-icon-4 = other;
 label-focused = %icon%
 label-focused-background = ${colors.background-semi}
 label-focused-underline= ${colors.nord-snow-storm-light}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-occupied = %icon%
-label-occupied-padding = 2
+label-occupied-padding = 1
 
 label-urgent = %icon%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 label-empty = %icon%
 label-empty-foreground = #808080
-label-empty-padding = 2
+label-empty-padding = 1
 
 ; Separator in between workspaces
 label-separator = |
