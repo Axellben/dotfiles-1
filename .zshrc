@@ -15,7 +15,7 @@ export ZSH="/home/orangefran/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,6 +106,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias go-cd="cd /home/orangefran/go/src/github.com/OrangeFran"
 alias msfconsole="msfconsole -x \"db_connect orangefran@msf\""
+alias sy="systemctl"
+alias ssy="systemctl"
+alias sp="sudo pacman"
+alias spI="sudo pacman -S"
+alias spR="sudo pacman -Rsc"
+alias spU="sudo pacman -Syu"
 
 # for rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
