@@ -28,11 +28,11 @@ set number
 highlight LineNr ctermfg=white
 
 " Color scheme
-colorscheme nord
+" colorscheme nord
 
 " Set status line display
 set laststatus=2
-hi StatusLine ctermfg=black ctermbg=darkblue cterm=NONE
+hi StatusLine ctermfg=black ctermbg=white cterm=NONE
 hi StatusLineNC ctermfg=black ctermbg=red cterm=NONE
 hi User1 ctermfg=black ctermbg=cyan
 hi User2 ctermfg=NONE ctermbg=NONE

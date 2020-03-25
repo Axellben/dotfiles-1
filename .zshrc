@@ -10,6 +10,9 @@ export PATH=$HOME/.scripts/bashscripts:$HOME/.scripts/pythonscripts:$HOME/.cargo
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/orangefran/.oh-my-zsh"
+export ESPIDF="/opt/esp-idf"
+
+export INSTALL4J_JAVA_HOME="/usr/lib/jvm"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
