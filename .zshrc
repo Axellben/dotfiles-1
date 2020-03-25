@@ -115,6 +115,7 @@ alias sp="sudo pacman"
 alias spI="sudo pacman -S"
 alias spR="sudo pacman -Rsc"
 alias spU="sudo pacman -Syu"
+alias cmpd="mpd --no-daemon --stdout"
 
 # for rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

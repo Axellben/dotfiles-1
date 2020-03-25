@@ -1,3 +1,12 @@
+# Mpd && Ncmpcpp
+install_mpd () {
+    sudo pacman -S --needed mpd ncmpcpp
+    mkdir ~/.config/mpd
+    mkdir ~/.ncmpcpp
+    ln mpd/* ~/.config/mpd
+    ln ncmpcpp/* ~/.ncmpcpp
+}
+
 # Wallpapers
 install_wallpapers () {
     sudo ln arch_logo.png /usr/share/wallpapers
