@@ -31,7 +31,7 @@ xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 # start mpd
-run mpd --no-daemon --stdout
+# run mpd --no-daemon --stdout
 
 # Tray
 
