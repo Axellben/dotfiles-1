@@ -25,7 +25,11 @@ setxkbmap -option 'nbsp:none'
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 # Set wallpaper with nitrogen
-nitrogen /usr/share/wallpapers/jellyfish.png --set-scaled
+
+# Nordic: /usr/share/wallpapers/jellyfish.png
+# Dark: /usr/share/wallpapers/arch.png
+# Red: /usr/share/wallpapers/mountain.png
+nitrogen /usr/share/wallpapers/checkrain.png --set-scaled
 
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &

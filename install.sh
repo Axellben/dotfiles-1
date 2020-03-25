@@ -9,8 +9,10 @@ install_mpd () {
 
 # Wallpapers
 install_wallpapers () {
-    sudo ln arch_logo.png /usr/share/wallpapers
+    sudo ln arch.png /usr/share/wallpapers
     sudo ln jellyfish.png /usr/share/wallpapers
+    sudo ln mountain.png /usr/share/wallpapers
+    sudo ln checkrain.png /usr/share/wallpapers
 }
 
 # Nvim
