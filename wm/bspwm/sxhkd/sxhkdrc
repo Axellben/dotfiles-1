@@ -48,7 +48,7 @@ super + x
 
 #Rofi theme selector
 super + r
-    rofi -show run
+    sh ~/.config/rofi/launchers/launcher.sh
 
 #Terminal
 super + Return
@@ -362,8 +362,8 @@ super + q
 #################################################################
 
 #Focus selected desktop
-super + Tab
-    rofi -show window
+#super + Tab
+#    rofi -show window
 
 # Increase/decrease window gap on focused desktop
 super + bracket{left,right}

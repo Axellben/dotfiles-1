@@ -25,13 +25,19 @@ install_nvim () {
 install_zsh () {
     ln .zshrc ~
     ln .p10k.zsh ~
+
+    # Oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    # Powerlevel 10k (to use: set ZSH_THEME="powerlevel10k/powerlevel10k" in .zshrc)
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 }
 
 # Install bspwm + configs etc.
 install_wm () {
     
     # Install needed tools
-    sudo pacman -S --needed polybar sxhkd bspwm nitrogen picom
+    sudo pacman -S --needed polybar sxhkd bspwm nitrogen picom conky
 
     # Bswpm
 	mkdir ~/.config/bspwm
@@ -50,6 +56,10 @@ install_wm () {
 	mkdir ~/.config/polybar/scripts
 	ln wm/polybar/* ~/.config/polybar
 	ln wm/polybar/scripts/* ~/.config/polybar/scripts
+
+    # Conky
+    mkdir ~/.config/conky
+    ln wm/conky/* ~/.config/conky
 
 }
 
