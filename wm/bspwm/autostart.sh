@@ -25,20 +25,18 @@ setxkbmap -option 'nbsp:none'
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
 # Set wallpaper with nitrogen
-nitrogen /usr/share/backgrounds/arch_logo2.png --set-zoom-fill
+nitrogen /usr/share/wallpapers/jellyfish.png --set-zoom-fill
 
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
-#conky -c $HOME/.config/bspwm/system-overview 
-#conky -c $HOME/.config/conky/AUR-Misty-LUA.conkyrc
-run variety &
+# start mpd
+run mpd --no-daemon --stdout
 
 # Tray
 
 # network applet
-#run killall nm-applet
-run nm-applet &
+# run nm-applet &
 
 # bluetooth
 # run blueman-tray &
@@ -53,7 +51,6 @@ run nm-applet &
 #run pamac-tray &
 
 #run xfce4-power-manager &
-numlockx on &
 picom --config $HOME/.config/bspwm/picom.conf &
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &

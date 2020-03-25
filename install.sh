@@ -46,7 +46,7 @@ install_wm () {
 
 # Add function you like
 main () {
-    install_wallpaper
+    install_wallpapers
     install_nvim
     install_zsh
     install_wm
