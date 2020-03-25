@@ -23,6 +23,17 @@ install_nvim () {
     ln .vimrc ~
 }
 
+# Rofi
+install_rofi () {
+    sudo pacman -S --needed rofi
+    mkdir ~/.config/rofi
+    mkdir ~/.config/rofi/launchers
+    mkdir -p ~/.config/rofi/themes/colorschemes
+    ln rofi/* ~/.config/rofi
+    ln rofi/launchers/* ~/.config/rofi/launchers
+    ln rofi/themes/colorschemes/* ~/.config/rofi/themes/colorschemes
+}
+
 # Zshrc (oh-my-zsh needed)
 install_zsh () {
     ln .zshrc ~
