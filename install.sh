@@ -34,6 +34,14 @@ install_rofi () {
     ln rofi/themes/colorschemes/* ~/.config/rofi/themes/colorschemes
 }
 
+# Ranger (with image preview (needs kitty))
+install_ranger () {
+    sudo pacman -S --needed ranger w3m python-pip
+    pip3 install pillow
+    mkdir ~/.config/ranger
+    ln ranger/* ~/.config/ranger
+}
+
 # Zshrc (oh-my-zsh needed)
 install_zsh () {
     ln .zshrc ~
@@ -78,6 +86,8 @@ install_wm () {
 main () {
     install_wallpapers
     install_nvim
+    install_rofi
+    install_mpd
     install_zsh
     install_wm
 }
