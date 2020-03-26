@@ -8,12 +8,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch the bar
 
-# openbox
-
-#polybar main -c /home/orangefran/.config/polybar/openbox/polybar-2/dark/config.blue &
-
 # bspwm
 
-polybar ws -r -c /home/orangefran/.config/polybar/config &
+polybar ws -r -c /home/orangefran/.config/polybar/config.ini &
 #polybar system -r -c /home/orangefran/.config/polybar/config &
-polybar music -r -c /home/orangefran/.config/polybar/config &
+polybar music -r -c /home/orangefran/.config/polybar/config.ini &

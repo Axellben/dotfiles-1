@@ -66,9 +66,7 @@ install_wm () {
 	
 	# Polybar
 	mkdir ~/.config/polybar
-	mkdir ~/.config/polybar/scripts
 	ln wm/polybar/* ~/.config/polybar
-	ln wm/polybar/scripts/* ~/.config/polybar/scripts
 
     # Conky
     mkdir ~/.config/conky
