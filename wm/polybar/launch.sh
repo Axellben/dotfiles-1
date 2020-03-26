@@ -15,5 +15,5 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # bspwm
 
 polybar ws -r -c /home/orangefran/.config/polybar/config &
-polybar system -r -c /home/orangefran/.config/polybar/config &
+#polybar system -r -c /home/orangefran/.config/polybar/config &
 polybar music -r -c /home/orangefran/.config/polybar/config &

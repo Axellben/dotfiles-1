@@ -34,14 +34,14 @@ unfocus1 = #101010
 ;---------------------------------------
 
 [bar/ws]
-width = 12.1%
-;width = 100%
-height = 32
+;width = 12.1%
+width = 100%
+height = 30
 
-radius = 10
+;radius = 10
 
-offset-x = 2.2%
-offset-y = 2.0%
+offset-x = 85.7%
+offset-y = 3.0%
 
 bottom = false
 border-size = 0
@@ -74,14 +74,14 @@ modules-center =
 ;---------------------------------------
 
 [bar/music]
-width = 10%
-;width = 100%
-height = 32
+;width = 10%
+width = 100%
+height = 30
 
-radius = 10
+;radius = 10
 
-offset-x = 45%
-offset-y = 2%
+offset-x = 0%
+offset-y = 3.0%
 
 bottom = false
 border-size = 0
@@ -106,8 +106,8 @@ font-0 = Hack Nerd Font:weight=bold:size=9;2
 ;---------------------------------------
 
 modules-left =
-modules-right = mpd
-modules-center =
+modules-right = 
+modules-center = mpd
 
 ;---------------------------------------
 ;      SYSTEM
