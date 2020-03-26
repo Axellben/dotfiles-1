@@ -87,6 +87,7 @@ main () {
     install_wallpapers
     install_nvim
     install_rofi
+    install_ranger
     install_mpd
     install_zsh
     install_wm
