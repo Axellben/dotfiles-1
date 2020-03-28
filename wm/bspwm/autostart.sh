@@ -32,7 +32,7 @@ setxkbmap -option 'nbsp:none'
 nitrogen /usr/share/wallpapers/checkrain.png --set-scaled
 
 # start dunst for notifs
-dunst -conf ~/.config/dunst/dunstrc
+run dunst -conf ~/.config/dunst/dunstrc
 
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
