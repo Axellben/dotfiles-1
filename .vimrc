@@ -1,13 +1,29 @@
 " Vim plug manager
 call plug#begin('~/.vim/plugged')
 
-Plug 'arcticicestudio/nord-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code completion
+Plug 'preservim/nerdtree' " File explorer
+Plug 'arcticicestudio/nord-vim' " Nordic colorscheme
+Plug 'vim-airline/vim-airline' " Themes
+Plug 'vim-airline/vim-airline-themes' " Themes
 
 call plug#end()
 
 let g:airline_powerline_fonts = 1
+
+" Start NERDTree automatically
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Assign key to NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Configure coc.nvim
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 syntax on
 set hls
