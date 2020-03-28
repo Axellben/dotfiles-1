@@ -108,10 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias go-cd="cd /home/orangefran/go/src/github.com/OrangeFran"
+alias gocd="cd /home/orangefran/go/src/github.com/OrangeFran"
 alias msfconsole="msfconsole -x \"db_connect orangefran@msf\""
 alias sy="systemctl"
-alias ssy="systemctl"
+alias ssy="sudo systemctl"
 alias sp="sudo pacman"
 alias spI="sudo pacman -S"
 alias spR="sudo pacman -Rsc"

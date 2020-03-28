@@ -10,8 +10,6 @@ install_mpd () {
 # Wallpapers
 install_wallpapers () {
     sudo ln arch.png /usr/share/wallpapers
-    sudo ln jellyfish.png /usr/share/wallpapers
-    sudo ln mountain.png /usr/share/wallpapers
     sudo ln checkrain.png /usr/share/wallpapers
 }
 
@@ -29,6 +27,7 @@ install_rofi () {
     mkdir ~/.config/rofi
     mkdir ~/.config/rofi/launchers
     mkdir -p ~/.config/rofi/themes/colorschemes
+    echo "Some errors here are okay (because of symlinks)!"
     ln rofi/* ~/.config/rofi
     ln rofi/launchers/* ~/.config/rofi/launchers
     ln rofi/themes/colorschemes/* ~/.config/rofi/themes/colorschemes
@@ -54,6 +53,14 @@ install_zsh () {
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 }
 
+# Dunst
+install_dunst () {
+    sudo pacman -S --needed dunst
+
+    mkdir ~/.config/dunst
+    ln dunst/dunstrc ~/.config/dunst
+}
+
 # Install bspwm + configs etc.
 install_wm () {
     
@@ -64,6 +71,9 @@ install_wm () {
 	mkdir ~/.config/bspwm
 	mkdir ~/.config/bspwm/scripts
 	mkdir ~/.config/bspwm/sxhkd
+
+    echo "Some errors here are okay (because of symlinks)!"
+
 	ln wm/bspwm/* ~/.config/bspwm 
 	ln wm/bspwm/scripts/* ~/.config/bspwm/scripts
 	ln wm/bspwm/sxhkd/* ~/.config/bspwm/sxhkd
@@ -84,13 +94,16 @@ install_wm () {
 
 # Add function you like
 main () {
-    install_wallpapers
-    install_nvim
-    install_rofi
-    install_ranger
-    install_mpd
-    install_zsh
-    install_wm
+    echo "Uncomment lines in main function to install tools!"
+
+    #install_wallpapers
+    #install_dunst
+    #install_nvim
+    #install_rofi
+    #install_ranger
+    #install_mpd
+    #install_zsh
+    #install_wm
 }
 
 main
