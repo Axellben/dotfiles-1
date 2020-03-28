@@ -31,6 +31,9 @@ setxkbmap -option 'nbsp:none'
 # Red: /usr/share/wallpapers/mountain.png
 nitrogen /usr/share/wallpapers/checkrain.png --set-scaled
 
+# start dunst for notifs
+dunst -conf ~/.config/dunst/dunstrc
+
 xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
