@@ -43,6 +43,7 @@ install_ranger () {
 
 # Zshrc (oh-my-zsh needed)
 install_zsh () {
+    sudo pacman -S --needed zsh zsh-syntax-highlighting
     ln .zshrc ~
     ln .p10k.zsh ~
 
