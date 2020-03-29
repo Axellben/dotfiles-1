@@ -10,6 +10,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # bspwm
 
-polybar ws -r -c /home/orangefran/.config/polybar/config.ini &
-#polybar system -r -c /home/orangefran/.config/polybar/config &
-polybar music -r -c /home/orangefran/.config/polybar/config.ini &
+polybar all -r -c ~/.config/polybar/topbar.ini 
+#polybar ws -r -c ~/.config/polybar/floating.ini &
+#polybar system -r -c ~/.config/polybar/floating.ini &
+#polybar music -r -c ~/.config/polybar/floating.ini &

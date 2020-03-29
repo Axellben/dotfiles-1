@@ -84,6 +84,7 @@ install_wm () {
 	ln wm/kitty/* ~/.config/kitty
 	
 	# Polybar
+    yay -S --needed nerd-fonts-hack ttf-font-awesome-4
 	mkdir ~/.config/polybar
 	ln wm/polybar/* ~/.config/polybar
 
