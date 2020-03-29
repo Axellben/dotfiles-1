@@ -10,7 +10,7 @@
 [global]
 monitor = 0
 follow = keyboard
-geometry = "250-30+75"
+geometry = "250-40+40"
 corner_radius =0
 indicate_hidden = yes
 shrink = false
@@ -19,7 +19,7 @@ notification_height = 0
 padding = 5
 horizontal_padding = 10
 frame_width = 2
-frame_color = "#000000"
+frame_color = "#FFFFFF"
 
 # Define a color for the separator.
 # possible values are:
@@ -92,7 +92,7 @@ context = ctrl+shift+period
 # Otherwise the "#" and following would be interpreted as a comment.
 background = "#22262e"
 foreground = "#cccccc"
-frame_color = "#89b8c2"
+frame_color = "#FFFFFF"
 timeout = 5
 # Icon for notifications with low urgency, uncomment to enable
 #icon = ~/.local/share/arch.png
@@ -100,13 +100,13 @@ timeout = 5
 [urgency_normal]
 background = "#161821"
 foreground = "#c6c8d1"
-frame_color = "#84a0c6"
+frame_color = "#FFFFFF"
 timeout = 5
 
 [urgency_critical]
 background = "#e27878"
 foreground = "#161821"
-frame_color = "#e27878"
+frame_color = "#FFFFFF"
 timeout = 0
 
 # Every section that isn't one of the above is interpreted as a rules to
