@@ -9,8 +9,7 @@ install_mpd () {
 
 # Wallpapers
 install_wallpapers () {
-    sudo ln arch.png /usr/share/wallpapers
-    sudo ln checkrain.png /usr/share/wallpapers
+    ln wallpapers/* ~/.local/share/wallpapers
 }
 
 # Nvim
@@ -98,7 +97,7 @@ install_wm () {
 main () {
     echo "Uncomment lines in main function to install tools!"
 
-    #install_wallpapers
+    install_wallpapers
     #install_dunst
     #install_nvim
     #install_rofi
@@ -106,6 +105,8 @@ main () {
     #install_mpd
     #install_zsh
     #install_wm
+
+    echo "Executed successfully!"
 }
 
 main

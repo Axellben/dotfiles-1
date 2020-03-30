@@ -26,10 +26,8 @@ setxkbmap -option 'nbsp:none'
 
 # Set wallpaper with nitrogen
 
-# Nordic: /usr/share/wallpapers/jellyfish.png
-# Dark: /usr/share/wallpapers/arch.png
-# Red: /usr/share/wallpapers/mountain.png
-nitrogen /usr/share/wallpapers/checkrain.png --set-scaled
+# Dark: ~/.local/share/wallpapers/arch.png
+nitrogen ~/.local/share/wallpapers/checkrain_dark_white.png --set-scaled
 
 # start dunst for notifs
 run dunst -conf ~/.config/dunst/dunstrc
