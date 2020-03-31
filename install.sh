@@ -1,21 +1,22 @@
 # Mpd && Ncmpcpp
 install_mpd () {
     sudo pacman -S --needed mpd ncmpcpp
-    mkdir ~/.config/mpd
-    mkdir ~/.ncmpcpp
+    mkdir -p ~/.config/mpd
+    mkdir -p ~/.ncmpcpp
     ln mpd/* ~/.config/mpd
     ln ncmpcpp/* ~/.ncmpcpp
 }
 
 # Wallpapers
 install_wallpapers () {
+    mkdir -p ~/.local/share/wallpapers
     ln wallpapers/* ~/.local/share/wallpapers
 }
 
 # Nvim
 install_nvim () {
     sudo pacman -S --needed nvim
-    mkdir ~/.config/nvim
+    mkdir -p ~/.config/nvim
     ln nvim/* ~/.config/nvim
     ln .vimrc ~
 }
@@ -23,8 +24,8 @@ install_nvim () {
 # Rofi
 install_rofi () {
     sudo pacman -S --needed rofi
-    mkdir ~/.config/rofi
-    mkdir ~/.config/rofi/launchers
+    mkdir -p ~/.config/rofi
+    mkdir -p ~/.config/rofi/launchers
     mkdir -p ~/.config/rofi/themes/colorschemes
     echo "Some errors here are okay (because of symlinks)!"
     ln rofi/* ~/.config/rofi
@@ -36,7 +37,7 @@ install_rofi () {
 install_ranger () {
     sudo pacman -S --needed ranger w3m python-pip
     pip3 install pillow
-    mkdir ~/.config/ranger
+    mkdir -p ~/.config/ranger
     ln ranger/* ~/.config/ranger
 }
 
@@ -61,7 +62,7 @@ install_zsh () {
 install_dunst () {
     sudo pacman -S --needed dunst
 
-    mkdir ~/.config/dunst
+    mkdir -p ~/.config/dunst
     ln dunst/dunstrc ~/.config/dunst
 }
 
@@ -72,9 +73,9 @@ install_wm () {
     sudo pacman -S --needed polybar sxhkd bspwm nitrogen picom conky
 
     # Bswpm
-	mkdir ~/.config/bspwm
-	mkdir ~/.config/bspwm/scripts
-	mkdir ~/.config/bspwm/sxhkd
+	mkdir -p ~/.config/bspwm
+	mkdir -p ~/.config/bspwm/scripts
+	mkdir -p ~/.config/bspwm/sxhkd
 
     echo "Some errors here are okay (because of symlinks)!"
 
@@ -83,16 +84,16 @@ install_wm () {
 	ln wm/bspwm/sxhkd/* ~/.config/bspwm/sxhkd
 	
 	# Kitty
-	mkdir ~/.config/kitty
+	mkdir -p ~/.config/kitty
 	ln wm/kitty/* ~/.config/kitty
 	
 	# Polybar
     yay -S --needed nerd-fonts-hack ttf-font-awesome-4
-	mkdir ~/.config/polybar
+	mkdir -p ~/.config/polybar
 	ln wm/polybar/* ~/.config/polybar
 
     # Conky
-    mkdir ~/.config/conky
+    mkdir -p ~/.config/conky
     ln wm/conky/* ~/.config/conky
 
 }

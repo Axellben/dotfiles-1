@@ -6,11 +6,6 @@ Plug 'arcticicestudio/nord-vim' " Nordic colorscheme
 Plug 'vim-airline/vim-airline' " Themes
 Plug 'vim-airline/vim-airline-themes' " Themes
 
-" Coding plugins
-Plug 'rust-lang/rust.vim' " Rust
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Golang
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' } " Python
-
 call plug#end()
 
 let g:airline_powerline_fonts = 1
