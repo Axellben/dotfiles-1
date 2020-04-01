@@ -17,7 +17,7 @@ function run {
 $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
-setxkbmap ch -option 'nbsp:none'
+setxkbmap ch -model macbook79 -option 'nbsp:none'
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &

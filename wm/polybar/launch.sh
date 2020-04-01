@@ -10,7 +10,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # bspwm
 
-polybar all -r -c ~/.config/polybar/topbar.ini 
+polybar all -r -c ~/dotfiles/wm/polybar/topbar.ini 
 #polybar ws -r -c ~/.config/polybar/floating.ini &
 #polybar system -r -c ~/.config/polybar/floating.ini &
 #polybar music -r -c ~/.config/polybar/floating.ini &
