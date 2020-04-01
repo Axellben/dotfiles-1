@@ -33,27 +33,24 @@ nitrogen ~/.local/share/wallpapers/checkrain_dark_white.png --set-scaled
 run dunst -conf ~/.config/dunst/dunstrc
 
 xsetroot -cursor_name left_ptr &
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 # start mpd
-# run mpd --no-daemon --stdout
+# mpd --no-daemon --stdout
 
 # Tray
 
 # network applet
-# run nm-applet &
+# nm-applet &
 
 # bluetooth
-# run blueman-tray &
+# blueman-tray &
 
 # battery
-# run cbatticon &
+# cbatticon &
 
 # pulseaudio
-# run pasystray &
-
-# pamac
-#run pamac-tray &
+# pasystray &
 
 #run xfce4-power-manager &
 picom --config $HOME/.config/bspwm/picom.conf &
